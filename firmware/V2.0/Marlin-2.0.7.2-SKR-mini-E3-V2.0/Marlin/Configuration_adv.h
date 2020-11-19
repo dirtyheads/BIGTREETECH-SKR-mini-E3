@@ -687,7 +687,7 @@
 
   // Safety: The probe needs time to recognize the command.
   //         Minimum command delay (ms). Enable and increase if needed.
-  //#define BLTOUCH_DELAY 500
+  #define BLTOUCH_DELAY 500
 
   /**
    * Settings for BLTOUCH Classic 1.2, 1.3 or BLTouch Smart 1.0, 2.0, 2.2, 3.0, 3.1, and most clones:
@@ -729,7 +729,7 @@
    * This feature was designed for Delta's with very fast Z moves however higher speed cartesians may function
    * If the machine cannot raise the probe fast enough after a trigger, it may enter a fault state.
    */
-  //#define BLTOUCH_HS_MODE
+  #define BLTOUCH_HS_MODE
 
   // Safety: Enable voltage mode settings in the LCD menu.
   //#define BLTOUCH_LCD_VOLTAGE_MENU
@@ -2554,7 +2554,7 @@
    *
    * Comment *_STALL_SENSITIVITY to disable sensorless homing for that axis.
    */
-  //#define SENSORLESS_HOMING // StallGuard capable drivers only
+  #define SENSORLESS_HOMING // StallGuard capable drivers only
 
   #if EITHER(SENSORLESS_HOMING, SENSORLESS_PROBING)
     // TMC2209: 0...255. TMC2130: -64...63
@@ -2592,7 +2592,7 @@
    * Enable M122 debugging command for TMC stepper drivers.
    * M122 S0/1 will enable continous reporting.
    */
-  //#define TMC_DEBUG
+  #define TMC_DEBUG
 
   /**
    * You can set your own advanced settings by filling in predefined functions.
